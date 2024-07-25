@@ -2,10 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
 // Connecting to MongoDB
-mongoose.connect('mongodb://localhost:27017/LoginSignup', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect('mongodb+srv://veerendrasvikky:YG6DtlLuNHfnR9BD@cluster0.blgtefy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 .then(() => {
     console.log('Connected to MongoDB');
 })
