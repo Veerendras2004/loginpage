@@ -38,7 +38,7 @@ LoginSchema.pre('save', async function(next) {
 });
 
 // Defining the collection using .model() method
-const User = mongoose.model('User', LoginSchema);
+const User = mongoose.model('users', LoginSchema);
 
 // Exporting the collection
 module.exports = User;
